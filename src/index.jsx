@@ -1,9 +1,13 @@
 /* @refresh reload */
-import { render } from 'solid-js/web'
-
 import './index.css'
-import App from './App'
 
-const root = document.getElementById('root')
+import { render } from "solid-js/web";
+import { Router, Route } from "@solidjs/router";
 
-render(() => <App />, root)
+import Home from "./pages/Home";
+
+render(() => (
+  <Router>
+    <Route path="/" component={Home} />
+  </Router>
+), document.getElementById("root"));

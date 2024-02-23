@@ -1,8 +1,7 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -18,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default Home 
