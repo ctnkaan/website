@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.navbar_home {
+    display: flex;
+}
+
+.navbar_others {
+    display: flex;
+    gap: 16px;
+}

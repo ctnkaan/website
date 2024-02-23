@@ -1,13 +1,13 @@
 import { createSignal } from 'solid-js'
-import solidLogo from './assets/solid.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = createSignal(0)
 
   return (
     <>
+      <Navbar />
       <h1>Cetin Kaan Taskingenc</h1>
       <p>
         Welcome to my public website.
