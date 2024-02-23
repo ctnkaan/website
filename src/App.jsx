@@ -1,10 +1,8 @@
-import { createSignal } from 'solid-js'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = createSignal(0)
-
   return (
     <>
       <Navbar />
@@ -15,6 +13,7 @@ function App() {
         thus this website was born.
         </p>
       <h2>About</h2>
+      <Footer />
     </>
   )
 }
