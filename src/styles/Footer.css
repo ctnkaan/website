@@ -1,8 +1,18 @@
+.footer {
+    margin-top: 2rem;
+}
+
+.innerFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
 .icon {
     height: 32px;
 }
 
 .footerIcons {
+    margin-top: 1rem;
     display: flex;
     gap: 16px;
 }

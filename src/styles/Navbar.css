@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
 }
 
 .navbar_home {
@@ -10,5 +9,5 @@
 
 .navbar_others {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
