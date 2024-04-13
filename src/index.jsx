@@ -1,23 +1,30 @@
 /* @refresh reload */
 import './index.css'
 
-import { render } from "solid-js/web";
-import { Router, Route } from "@solidjs/router";
+import { render } from 'solid-js/web'
+import { Router, Route } from '@solidjs/router'
 
-import Navbar from "./components/Navbar"
-import Home from "./pages/Home";
-import Projects from './pages/Projects';
-import Community from './pages/Community';
-import Blog from "./pages/Blog"
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Community from './pages/Community'
+import Blog from './pages/Blog'
 
-render(() => (
-    <> 
+render(
+  () => (
+    <>
       <Navbar />
+
       <Router>
-        <Route path="/projects" component={Projects} />
-        <Route path="/community" component={Community} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/" component={Home} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/community' component={Community} />
+        <Route path='/blog' component={Blog} />
+        <Route path='/' component={Home} />
       </Router>
+
+      <Footer />
     </>
-), document.getElementById("root"));
+  ),
+  document.getElementById('root')
+)

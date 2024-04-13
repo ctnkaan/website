@@ -1,0 +1,16 @@
+.card {
+  h3 {
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 0;
+
+    a {
+      font-weight: 300;
+      color: white;
+    }
+  }
+
+  p {
+    margin-top: 4px;
+  }
+}

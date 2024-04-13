@@ -1,4 +1,4 @@
-import Project from "../components/Project"
+import Card from "../components/Card"
 
 const projects = [
   {
@@ -19,7 +19,7 @@ const Projects = () => {
         <h1>Projects</h1>
 
         {projects.map((project) => (
-          <Project
+          <Card
             name={project.name}
             url={project.url}
             desc={project.desc}

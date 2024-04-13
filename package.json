@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "@solidjs/router": "^0.12.4",
     "solid-js": "^1.8.15"
   },
   "devDependencies": {
+    "prettier": "3.2.5",
     "vite": "^5.1.4",
     "vite-plugin-solid": "^2.10.1"
   }
