@@ -1,40 +1,51 @@
-name: Build and Preview Vite SolidJS App
+name: Deploy
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
         with:
           version: 8
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build app
+      - name: Build project
         run: pnpm run build
 
-      - name: Deploy
-        run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
-          pnpm run deploy
-        env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          repository: ${{ github.repository }}
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN  }}
+          publish_dir: ./dist
