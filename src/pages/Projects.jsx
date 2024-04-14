@@ -1,30 +1,14 @@
-import Card from "../components/Card"
-
-const projects = [
-  {
-    name: "Postman Sentinel",
-    url: "https://github.com/ctnkaan/Postman-Sentinel",
-    desc: "A Cybersecurity Discord Bot that has blocked 1000+ phishing attacks"
-  },
-  {
-    name: "Terminal Website",
-    url: "https://github.com/ctnkaan/portfolio",
-    desc: "My old website themed around an unix terminal"
-  }
-]
+import Card from '../components/Card'
+import projects from '../data/projets/projects.json'
 
 const Projects = () => {
   return (
     <div>
-        <h1>Projects</h1>
+      <h1>Projects</h1>
 
-        {projects.map((project) => (
-          <Card
-            name={project.name}
-            url={project.url}
-            desc={project.desc}
-          />
-        ))}
+      {projects.map(project => (
+        <Card name={project.name} url={project.url} desc={project.desc} />
+      ))}
     </div>
   )
 }
