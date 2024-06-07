@@ -5,8 +5,18 @@
     "desc": "A Cybersecurity Discord Bot that has blocked 1000+ phishing attacks"
   },
   {
+    "name": "Conway's Game of Life",
+    "url": "https://github.com/ctnkaan/game-of-life",
+    "desc": "A game of life simultation written in Svelte"
+  },
+  {
     "name": "Terminal Website",
     "url": "https://github.com/ctnkaan/portfolio",
     "desc": "My old website themed around an unix terminal"
-  }
+  }, 
+  {
+    "name": "Make Discord Bot",
+    "url": "https://github.com/ctnkaan/make-discord-bot",
+    "desc": "An old CLI for developing Discord bots"
+  },
 ]
