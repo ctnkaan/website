@@ -1,4 +1,29 @@
-[
+[  
+      {
+    "name": "Web Development Bootcamp Day 3",
+    "url": "https://www.linkedin.com/posts/cetinkaantaskingenc_hey-everyone-continuing-with-late-shares-activity-7202251396497174529-IdCG?utm_source=share&utm_medium=member_desktop",
+    "desc": "In the third and final day of web development bootcamp I introduced students to React.js, React Hooks, Node dependencies and more"
+  },
+      {
+    "name": "Web Development Bootcamp Day 2",
+    "url": "https://www.linkedin.com/posts/cetinkaantaskingenc_hey-everyone-continuing-with-late-shares-activity-7202251396497174529-IdCG?utm_source=share&utm_medium=member_desktop",
+    "desc": "In the second day of web development bootcamp we divied deep into JavaScript, DOM, Node.js and some NPM"
+  },
+      {
+    "name": "Web Development Bootcamp Day 1",
+    "url": "https://www.linkedin.com/posts/cetinkaantaskingenc_hey-everyone-continuing-with-late-shares-activity-7202251396497174529-IdCG?utm_source=share&utm_medium=member_desktop",
+    "desc": "In the first day of the web development bootcamp we covered HTML, CSS and Flexbox"
+  },
+    {
+    "name": "Git for Beginners",
+    "url": "https://www.linkedin.com/posts/cetinkaantaskingenc_hey-everyone-continuing-with-late-shares-activity-7202251396497174529-IdCG?utm_source=share&utm_medium=member_desktop",
+    "desc": "An hour and a half long workshop that aims to teach students Git both in Terminal and VSCode GUI"
+  },
+  {
+    "name": "Building Web Apps with Gemini AI",
+    "url": "https://www.linkedin.com/posts/cetinkaantaskingenc_two-weeks-ago-i-had-the-pleasure-of-leading-activity-7199804372891951104-kxP5?utm_source=share&utm_medium=member_desktop",
+    "desc": "An hour long workshop that demonstrates how to build a AI chatbot website using React.js and Gemini API"
+  },
   {
     "name": "Introduction to Git & GitHub",
     "url": "https://www.linkedin.com/posts/gdsc-erzincan_git-ve-github-e%C4%9Fi%CC%87ti%CC%87mi%CC%87-gdsc-erzincan-activity-7145416231901212672-WZMB?utm_source=share",
